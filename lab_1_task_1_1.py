@@ -14,6 +14,7 @@ virus = correct_input(virus)
 lower_virus = virus.lower()
 
 # We use binary representation of a number as sequence of upper and lower letter
+# I know it is so hard, but I don't see another way
 for i in range(0, 2 ** (len(virus))):
     # writing the code
     code = str(bin(i))[2:]
